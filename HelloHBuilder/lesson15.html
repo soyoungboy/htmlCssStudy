@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/**
+			 * box1距离box2距离取最大值 150
+			 */
+			.box1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				margin-bottom: 150px;
+				
+			}
+			
+			.box2{
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				margin-top: 100px;
+			}
+			
+			/**
+			 * 父子元素
+			 * box4子元素
+			 * box3父元素
+			 * box4元素的外边距设置给父元素box3
+			 */
+			.box3{
+				width: 200px;
+				height: 100px;
+				background-color: yellow;
+				margin-top: 200px;
+			}
+			
+			.box4{
+				width: 100px;
+				height: 100px;
+				background-color: yellowgreen;
+				margin-top: 100px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="box3">
+			<div class="box4"></div>
+		</div>
+		
+		<div class="box1"></div>
+		<div class="box2"></div>
+	</body>
+</html>

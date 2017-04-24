@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			span {
+				background-color: #FFA500;
+			}
+			/**
+			 * 宽120 高120 颜色为#0000FF的div
+			 */
+			
+			.box1 {
+				width: 120px;
+				height: 120px;
+				background-color: #0000FF;
+			}
+			
+			.s1 {
+				/*
+				 	内容区、内边距 、边框 、外边距
+				 * */
+				/*
+				 * 内联元素不能设置width和height,設置了也沒有效果
+				 */
+				width: 200px;
+				height: 200px;
+				/*
+				 * 水平方向上内边距左为100px,右为100px
+				 */
+				padding-left: 100px;
+				padding-right: 100px;
+				/*
+				 * 垂直方向内边距，内联元素可以设置垂直方向内边距，但是不会影响页面的布局
+				 */
+				padding-top: 50px;
+				padding-bottom: 50px;
+				/*
+				 * 为元素设置边框,
+				 * 	内联元素可以设置边框，但是垂直的边框不会影响到页面的布局
+				 */
+				border: 2px yellow solid;
+				/*
+				 * 水平外边距100px
+				 */
+				margin-left: 100px;
+				margin-right: 100px;
+				/*
+				 * 内联元素不支持垂直外边距,因此设置如下完全没有效果
+				 */
+				margin-top: 200px;
+				margin-bottom: 200px;
+			}
+			
+			.s2 {
+				/*
+				 * 为右边的元素设置一个左外边距
+				 * 水平方向的相邻外边距不会重叠，而是求和
+				 */
+				margin-left: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<span class="s1">章台路</span>
+		<span class="s2">还见褪粉梅梢</span>
+		<span>试花桃树</span>
+		<span>愔愔坊陌人家</span>
+
+		<div class="box1"></div>
+	</body>
+
+</html>
