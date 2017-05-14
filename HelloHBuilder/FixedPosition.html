@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style type="text/css">
+			.box1 {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			/**
+			 * 页面滚动，box2依然不动，固定在左上角
+			 */
+			
+			.box2 {
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+				position: fixed;
+				left: 0px;
+				top: 0px;
+			}
+			
+			.box3 {
+				width: 200px;
+				height: 200px;
+				background-color: yellowgreen;
+			}
+			
+			.box4 {
+				width: 300px;
+				height: 300px;
+				background-color: orange;
+			}
+		</style>
+
+	</head>
+
+	<body style="height: 5000px;">
+
+		<div class="box1">box1</div>
+		<div class="box4">box4
+			<div class="box2">box2</div>
+		</div>
+		<div class="box3">box3</div>
+	</body>
+
+</html>
