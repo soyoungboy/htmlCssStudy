@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+	</head>
+
+	<body>
+		<form action="target.html">
+		<fieldset>
+			<legend>用户信息</legend>
+			<label>用户名：</label>
+			<input type="text" name="username" />
+			</br>
+			</br>
+			<label>密码： </label>
+			<input type="password" name="password" />
+		</fieldset>
+
+		<fieldset>
+			<legend>用户爱好</legend>
+			<label>男</label>
+			<input type="radio" name="gender" value="male"/>
+			<label>女</label>
+			<input type="radio" name="gender" value="female"/>
+		</fieldset>
+		<fieldset>
+			<legend>体育爱好</legend>
+			<input type="checkbox" name="hobby" value="mountain-climbing">登山</input>
+			<input type="checkbox" name="hobby" value="play-basketball">打篮球</input>
+			<input type="checkbox" name="hobby" value="play-billiards">打台球</input>
+			<input type="checkbox" name="hobby" value="swimming">游泳</input>
+		</fieldset>
+		<!--下拉列表-->
+		<select name="star">
+			<optgroup label="男明星">
+				<option value="ldh">刘德华</option>
+				<option value="yd">杨迪</option>
+				<option value="zbs">赵本山</option>
+			</optgroup>
+			<optgroup label="女明星">
+				<option value="lt">刘涛</option>
+				<option value="fbb">范冰冰</option>
+				<option value="lbb">李冰冰</option>
+			</optgroup>
+		</select>
+		<br />
+		<br />
+		自我介绍：
+		<textarea name="self-introduction"></textarea>
+		<br/>
+		<br/>
+		<input type="submit" value="提交" />
+		<input type="reset" value="重置" />
+		<input type="button" value="按钮" />
+		<br/>
+		<br/>
+		<button type="submit">提交</button>
+		<button type="reset" >重置</button>
+		<button type="button"/>按钮</button>
+	</body>
+
+</html>
